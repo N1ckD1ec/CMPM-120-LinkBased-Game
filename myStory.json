@@ -1,0 +1,140 @@
+{
+    "Title": "Campus Life",
+    "Credits": "Created by Nick Diec (ndiec@ucsc.edu).",
+    "InitialLocation": "Kresge",
+    "Locations": {
+      "Kresge": {
+        "Body": "This is Kresge College, lots of nice trees.",
+        "Choices": [
+          { "Text": "South", 
+          "Target": "Porter" },
+
+          { "Text": "East", 
+          "Target": "College 9" }
+        ]
+      },
+      "Porter": {
+        "Body": "This is Porter College, the trees are nice here too.",
+        "Choices": [
+          { "Text": "North", 
+          "Target": "Kresge" },
+
+          { "Text": "South", 
+          "Target": "Rachel Carson" }
+        ]
+      },
+      "Rachel Carson": {
+        "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Choices": [
+          { "Text": "North", 
+          "Target": "Porter" },
+
+          { "Text": "South", 
+          "Target": "Oakes" }
+        ]
+      },
+      "Oakes": {
+        "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Choices": [
+          { "Text": "North", 
+          "Target": "Rachel Carson" },
+
+          { "Text": "South", 
+          "Target": "Beyond" }
+        ]
+      },
+      "Beyond": {
+        "Body": "Grass, don't forget to check for ticks!",
+        "Choices": [
+          { "Text": "Use keycard to bus to the Bookstore", 
+          "Target": "Bookstore", "Requires": "Keycard" },
+
+          { "Text": "Use keycard to bus to the Open Gym", 
+          "Target": "Open Gym", "Requires": "Keycard" }
+        ]
+      },
+      "College 9": {
+        "Body": "College 9—modern, sleek, and bustling with students.",
+        "Choices": [
+          { "Text": "East", 
+          "Target": "Crown" },
+
+          { "Text": "West", 
+          "Target": "Kresge" }
+        ]
+      },
+      "Crown": {
+        "Body": "Crown College, where tech and tradition collide.",
+        "Choices": [
+          { "Text": "East", 
+          "Target": "Merrill" },
+
+          { "Text": "West", 
+          "Target": "College 9" }
+        ]
+      },
+      "Merrill": {
+        "Body": "Merrill College, home to the famous Merrill Market.",
+        "Choices": [
+          { "Text": "Buy chips from Merrill Market", 
+          "Target": "Market", "Special": "MarketScene" },
+
+          { "Text": "East", 
+          "Target": "Stevenson" },
+
+          { "Text": "West", 
+          "Target": "Crown" }
+        ]
+      },
+      "Market": {
+        "Body": "You grab some chips. Hunger satisfied, you feel ready to explore again.",
+        "Choices": [
+          { "Text": "Return to Merrill", 
+          "Target": "Merrill" }
+        ]
+      },
+      "Stevenson": {
+        "Body": "Stevenson College has a peaceful vibe and a scenic view.",
+        "Choices": [
+          { "Text": "East", 
+          "Target": "Cowell" },
+
+          { "Text": "West", 
+          "Target": "Merrill" }
+        ]
+      },
+      "Cowell": {
+        "Body": "Cowell College, where tradition lives.",
+        "Choices": [
+          { "Text": "West", 
+          "Target": "Stevenson" },
+
+          { "Text": "Find your lost keycard", 
+          "Target": "FoundKeycard" }
+        ]
+      },
+      "FoundKeycard": {
+        "Body": "You find your lost keycard in the Cowell study lounge!",
+        "Give": "Keycard",
+        "Choices": [
+          { "Text": "Return to Beyond", 
+          "Target": "Beyond" }
+        ]
+      },
+      "Bookstore": {
+        "Body": "The campus bookstore is quiet but full of useful supplies.",
+        "Choices": [
+          { "Text": "Back to Beyond", 
+          "Target": "Beyond" }
+        ]
+      },
+      "Open Gym": {
+        "Body": "You enter the gym, alive with energy and the sound of squeaky shoes.",
+        "Choices": [
+          { "Text": "Back to Beyond", 
+          "Target": "Beyond" }
+        ]
+      }
+    }
+  }
+  
